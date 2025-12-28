@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>🎓 Student Result Analyzer</h1>
+            <p class="subtitle">Professional Academic Performance Dashboard</p>
+        </header>
+
+        <!-- Student Selection Section -->
+        <section class="selection-section">
+            <div class="select-wrapper">
+                <label for="studentSelect">Select Student:</label>
+                <select id="studentSelect" class="student-select">
+                    <option value="">-- Choose a Student --</option>
+                </select>
+            </div>
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="🔍 Search by name..." class="search-input">
+            </div>
+        </section>
+
+        <!-- Class Statistics Section -->
+        <section class="stats-section" id="statsSection" style="display: none;">
+            <div class="stat-card">
+                <h3>Class Average</h3>
+                <p class="stat-value" id="classAverage">--</p>
+            </div>
+            <div class="stat-card highlight">
+                <h3>Highest Scorer</h3>
+                <p class="stat-value" id="highestScorer">--</p>
+            </div>
+            <div class="stat-card">
+                <h3>Lowest Scorer</h3>
+                <p class="stat-value" id="lowestScorer">--</p>
+            </div>
+        </section>
+
+        <!-- Student Result Section -->
+        <section class="result-section" id="resultSection" style="display: none;">
+            <div class="result-header">
+                <h2 id="studentName">Student Name</h2>
+                <button id="exportBtn" class="export-btn">📄 Export as PDF</button>
+            </div>
+
+            <!-- Academic Overview -->
+            <div class="overview-cards">
+                <div class="overview-card">
+                    <span class="label">Total Marks</span>
+                    <span class="value" id="totalMarks">--</span>
+                </div>
+                <div class="overview-card">
+                    <span class="label">Percentage</span>
+                    <span class="value" id="percentage">--</span>
+                </div>
+                <div class="overview-card">
+                    <span class="label">Grade</span>
+                    <span class="value" id="grade">--</span>
+                </div>
+                <div class="overview-card">
+                    <span class="label">Attendance</span>
+                    <span class="value" id="attendance">--</span>
+                </div>
+            </div>
+
+            <!-- Performance Analysis -->
+            <div class="analysis-box">
+                <h3>📊 Performance Analysis</h3>
+                <p id="performanceAnalysis">--</p>
+            </div>
+
+            <!-- Subject-wise Marks -->
+            <div class="marks-container">
+                <h3>Subject-wise Performance</h3>
+                <div class="marks-grid" id="marksGrid"></div>
+            </div>
+
+            <!-- Charts -->
+            <div class="charts-container">
+                <div class="chart-wrapper">
+                    <h3>Subject Performance</h3>
+                    <canvas id="subjectChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <h3>Performance Distribution</h3>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Load Chart.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+
+    <!-- Load all JavaScript modules -->
+    <script src="data.js"></script>
+    <script src="calculator.js"></script>
+    <script src="analytics.js"></script>
+    <script src="charts.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

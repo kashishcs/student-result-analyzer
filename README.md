@@ -1,9 +1,9 @@
 # Student Result Analyzer – Academic Performance Dashboard
 
-A professional, interactive student performance analyzer built with vanilla JavaScript.
-[![Demo: Live](https://img.shields.io/badge/demo-live-success)](https://kashishcs.github.io/student-result-analyzer/)
-![License: MIT](https://img.shields.io/badge/license-MIT-blue)
-[![Tech](https://img.shields.io/badge/tech-HTML%20%7C%20CSS%20%7C%20JavaScript)](https://developer.mozilla.org/en-US/docs/Web)
+[![Demo: Live](https://img.shields.io/badge/demo-Live-success?style=flat-square)](https://kashishcs.github.io/student-result-analyzer/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Tech](https://img.shields.io/badge/Tech-HTML%20%7C%20CSS%20%7C%20JavaScript-blue?style=flat-square)]()
+
 
 ---
 
